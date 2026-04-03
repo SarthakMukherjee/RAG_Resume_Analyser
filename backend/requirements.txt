@@ -195,6 +195,7 @@ langchain==1.2.14
 langchain-core==1.2.23
 langchain-groq==1.1.2
 langgraph==1.1.4
+langchain-community==0.4.1
 
 groq==0.37.1
 
