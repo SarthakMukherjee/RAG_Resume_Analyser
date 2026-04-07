@@ -21,6 +21,7 @@ def run_pipeline(resume_path, job_path):
     # vector store
     vectorstore = create_vector_store(job_chunks, embedding_model)
 
+
     # retriever
     retriever = get_retriever(vectorstore)
 
