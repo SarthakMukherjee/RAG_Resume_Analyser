@@ -7,14 +7,14 @@
 // For production: https://your-domain.com/api
 
 const ENV_CONFIG = {
-  development: {
-    API_BASE_URL: "http://localhost:8000" || HTML_URLS,
-    DEBUG: true,
-  },
-  production: {
-    API_BASE_URL: "https://your-production-domain.com/api",
-    DEBUG: false,
-  },
+    development: {
+        API_BASE_URL: ' http://localhost:8000',
+        DEBUG: true
+    },
+    production: {
+        API_BASE_URL: 'https://your-production-domain.com/api',
+        DEBUG: false
+    }
 };
 
 // Set current environment (change to 'production' when deploying)
