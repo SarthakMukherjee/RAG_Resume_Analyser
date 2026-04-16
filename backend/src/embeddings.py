@@ -12,6 +12,6 @@ load_dotenv()
 
 def get_embedding_model():
     return OpenAIEmbeddings(
-        model_name = "text-embedding-3-small",
+        model = "text-embedding-3-small",
         api_key=os.getenv('OPENAI_API_KEY')
     )

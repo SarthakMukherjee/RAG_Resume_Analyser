@@ -185,8 +185,8 @@ langchain-core
 langchain-groq
 langchain-openai
 
-sentence-transformers
-transformers
+# sentence-transformers
+# transformers
 # torch
 
 faiss-cpu
@@ -195,7 +195,7 @@ pydantic
 requests
 tqdm
 numpy
-scikit-learn
+# scikit-learn
 python-multipart
 
 PyMuPDF
