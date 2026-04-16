@@ -21,7 +21,7 @@ app = FastAPI(
 # CORS middleware for frontend integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://rag-resume-analyser-b9ki.onrender.com"],  # Change to specific origins in production
+    allow_origins=["https://rag2026.netlify.app/"],  # Change to specific origins in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
