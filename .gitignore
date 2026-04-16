@@ -3,11 +3,11 @@ backend/__pycache__/
 backend/src/__pycache__/
 backend/src/.ipynb_checkpoints/
 backend/.env
-backend/notebooks/.ipynb_checkpoints/
 backend/data/
 
 # Notebooks
 backend/notebooks/
+
 
 # Vitual env
 venv/
