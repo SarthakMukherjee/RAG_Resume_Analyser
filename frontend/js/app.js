@@ -2,8 +2,9 @@
 // Configuration
 // ================================
 const CONFIG = {
-  // API_BASE_URL: "https://rag-resume-analyser-b9ki.onrender.com",
-  API_BASE_URL: window.APP_CONFIG,
+  API_BASE_URL: "https://rag-resume-analyser-b9ki.onrender.com",
+  // API_BASE_URL: "http://127.0.0.1:8000",
+  // API_BASE_URL: window.APP_CONFIG,
   MAX_FILE_SIZE: 10 * 1024 * 1024, // 10MB
   LOADING_MESSAGES: [
     "Initializing analysis...",
@@ -219,6 +220,21 @@ async function handleFormSubmit(e) {
     });
 
     const data = await response.json();
+
+    // following added on 16-04-26
+    // const response = await fetch(...);
+
+  // if (!response.ok) {
+  //   const text = await response.text();
+  //   throw new Error(text || "API error");
+  // }
+
+  // let data;
+  // try {
+  //   data = await response.json();
+  // } catch (err) {
+  //   throw new Error("Invalid JSON response from server");
+  // }
 
     // Hide loading
     hideLoading();
