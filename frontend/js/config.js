@@ -12,7 +12,7 @@ const ENV_CONFIG = {
         DEBUG: true
     },
     production: {
-        API_BASE_URL: 'https://your-production-domain.com/api',
+        API_BASE_URL: 'https://rag-resume-analyser-b9ki.onrender.com',
         DEBUG: false
     }
 };
