@@ -5,6 +5,15 @@ from src.vector_store import create_vector_store
 from src.retriever import get_retriever, retrieve_docs
 from src.llm import get_llm, generate_response
 
+
+# Global Initialization
+embedding_model = get_embedding_model()
+llm = get_llm()
+
+# ==================================================
+
+# Main Pipeline
+
 def run_pipeline(resume_path, job_path):
 
     # document loader
@@ -15,12 +24,8 @@ def run_pipeline(resume_path, job_path):
     resume_chunks = chunk_documents(resume_docs)
     job_chunks = chunk_documents(job_docs)
 
-    # embedding
-    embedding_model = get_embedding_model()
-
     # vector store
     vectorstore = create_vector_store(job_chunks, embedding_model)
-
 
     # retriever
     retriever = get_retriever(vectorstore)
@@ -31,7 +36,6 @@ def run_pipeline(resume_path, job_path):
     # retrieve relevant job info
     retrieved_docs = retrieve_docs(retriever, resume_text)
 
-    # llm 
-    llm = get_llm()
+    
     response = generate_response(llm, resume_text, retrieved_docs)
     return response
