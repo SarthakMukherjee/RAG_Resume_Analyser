@@ -2,7 +2,8 @@
 // Configuration
 // ================================
 const CONFIG = {
-  API_BASE_URL: "http://localhost:8000" || "https://rag-resume-analyser-b9ki.onrender.com",
+  // API_BASE_URL: "https://rag-resume-analyser-b9ki.onrender.com",
+  API_BASE_URL: window.APP_CONFIG,
   MAX_FILE_SIZE: 10 * 1024 * 1024, // 10MB
   LOADING_MESSAGES: [
     "Initializing analysis...",

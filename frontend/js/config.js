@@ -8,7 +8,7 @@
 
 const ENV_CONFIG = {
     development: {
-        API_BASE_URL: ' http://localhost:8000',
+        API_BASE_URL: 'http://localhost:8000',
         DEBUG: true
     },
     production: {
@@ -18,7 +18,7 @@ const ENV_CONFIG = {
 };
 
 // Set current environment (change to 'production' when deploying)
-const CURRENT_ENV = "development";
+const CURRENT_ENV = "production";
 
 // Export configuration
 window.APP_CONFIG = {
