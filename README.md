@@ -48,22 +48,6 @@ RAG Pipeline (pipeline.py)
         │
         ▼
 JSON Response → Frontend UI```Frontend (HTML/CSS/JS)
-        │
-        ▼
-FastAPI Backend (main.py)
-        │
-        ▼
-RAG Pipeline (pipeline.py)
-        │
-        ├── Loader
-        ├── Chunking
-        ├── Embeddings (OpenAI)
-        ├── Vector Store (FAISS)
-        ├── Retriever
-        └── LLM (Groq)
-        │
-        ▼
-JSON Response → Frontend UI
 ```
 
 ## 📂 Project Structure
